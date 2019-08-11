@@ -1,6 +1,6 @@
 node {
     stage('Checkout SCM') {
-        git 'https://github.com/Vishwanathms/Java-Proj1'
+        https://github.com/Devopsumesh/Test-java.git'
     }
     stage('Properties-SCM-Trigger') {
         properties([pipelineTriggers([upstream('Job1'), githubPush(), pollSCM('H/3 * * * *')])])
